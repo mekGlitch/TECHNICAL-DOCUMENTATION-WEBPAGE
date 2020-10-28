@@ -1,0 +1,93 @@
+#navbar{
+  position: fixed;
+  display: grid;
+  height: 100%;
+  width: 14%;
+  grid-template-columns: auto;
+  grid-template-rows: 140px repeat(5, 60px);
+  border-right: 5px solid white;
+}
+#navhead{
+  font-size: 35px;
+  color: #00FFAE;
+  text-align: center;
+  border-bottom: 5px solid white;
+}
+.nav-link{
+  font-size: 20px;
+  font-family: "Racing Sans One", "cursive";
+  color: #FF5050;
+  text-transform: uppercase;
+  text-align: center;
+  align-self: center;
+  text-decoration: none;
+  border-bottom: 5px solid white;
+}
+.nav-link:hover{
+  color: #00FFAE;
+  
+}
+#page{
+  background: black;
+  background-repeat: no-repeat;
+}
+#main-doc{
+  margin: 0% auto 5% 15%;
+  width: auto;
+}
+header{
+  font-size: 35px;
+  font-family: "Racing Sans One", "cursive";
+  text-transform: uppercase;
+  color: #ffeb00;
+}
+p{
+  
+}
+code{
+  display: block;
+  background: #444444;
+  height: auto;
+  width: auto;
+  text-align: left;
+  margin: 2% auto 2% auto;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+.main-section{
+  font-size: 20px;
+  font-family: "Crimson Pro", "calibri";
+  color: #00ff62;
+}
+@media (max-width: 1000px){
+#main-doc{
+  margin: 2% auto 2% 0%;
+  position: relative;
+  top: 120px;
+}
+header{
+  font-size: 17px;
+}
+.main-section{
+  font-size: 10px;
+}
+#navbar{
+  height: auto;
+  width: 100%;
+  margin: -2% auto 0px auto;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: 50px auto auto;
+  grid-row-wrap: wrap;
+  border-right: none;
+  background: black;
+  z-index: 100;
+}
+#navhead{
+  font-size: 30px;
+  grid-column: 1/span 4; 
+}
+.nav-link{
+  font-size: 20px;
+  border-right: 4px solid white;
+}
+}
